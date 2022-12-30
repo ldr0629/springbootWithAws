@@ -42,6 +42,5 @@ public class SocialUser {
 
     public String getRoleKey() {
         return this.role.getKey();
-
     }
 }
