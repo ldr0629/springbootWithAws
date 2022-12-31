@@ -1,5 +1,5 @@
 HELP.md
-application-oauth-properties
+application-oauth.properties
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -8,7 +8,7 @@ build/
 
 ### STS ###
 .apt_generated
-.classpath
+.classpathK
 .factorypath
 .project
 .settings
