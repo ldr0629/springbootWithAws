@@ -1,0 +1,23 @@
+language: java
+jdk:
+  - openjdk17
+
+# Travis CI를 어느 브랜치가 푸시될 때 수행할지를 지정
+branches:
+  only:
+    - master
+
+# Travis CI 서버의 Home
+cache:
+  directories: # 캐싱 후 같은 의존성은 다음 배포 때부터 다시 받지 않도록 설정
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
+# master 브랜치에 푸시되었을 때 수행하는 명령어
+script: "./gradlew clean build"
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - leedero01@naver.com
